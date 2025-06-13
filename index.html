@@ -10,29 +10,48 @@
     <meta name="author" content="Health Hub Group">
     <meta name="description" content="Health Hub Group provides compassionate, high-quality healthcare across Northeast India—offering emergency services, free ambulance, diagnostics, surgeries, outpatient check-ups, pharmacy & more. Trusted doctors delivering expert care for families and communities.">
 
+    <!-- Cannonical Tag -->
+    <link rel="canonical" href="https://carehealthhubs.com/" >
 
     <!-- Favicon -->
     <link href="img/favicon.png" rel="icon">
 
     <!-- Google Web Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
 
-    <!-- Icon Font Stylesheet -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <!-- Preload Font Awesome CSS -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    </noscript>
+
+    <!-- Preload Bootstrap Icons CSS -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    </noscript>
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" >
+    <link rel="preload" href="lib/owlcarousel/assets/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css"></noscript>
+
+    <link rel="preload" href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"></noscript>
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="css/bootstrap.min.css" rel="stylesheet"></noscript>
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="css/style.css" rel="stylesheet"></noscript>
+
+    <!-- Preconnect for faster DNS resolution -->
+    <link rel="preconnect" href="https://code.jquery.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
 
     <!-- the following file does not exist so disabling it -->
 	<!-- <link href="assets/glightbox/css/glightbox.min.css" rel="stylesheet">  -->
@@ -71,9 +90,9 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>Health Hub Group</h1>
+                    <p class="m-0 text-uppercase text-primary h1"><i class="fa fa-clinic-medical me-2"></i>Health Hub Group</p>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -92,19 +111,19 @@
     <!-- Navbar End -->
 
 
-	<section id="home" class="about section">
+	<div id="home" class="about section">
     <!-- Hero Start -->
     <div class="container-fluid bg-primary py-5 mb-5 hero-header">
         <div class="container py-5">
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
-                    <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5" style="border-color: rgba(256, 256, 256, .3) !important;">Welcome To Health Hub 						Group</h5>
-                    <h1 class="display-1 text-white mb-md-4">Best Healthcare Solution In Your City</h1>
+                    <p class="d-inline-block text-primary text-uppercase border-bottom border-5 h5" style="border-color: rgba(256, 256, 256, .3) !important;">Welcome To Health Hub 						Group</p>
+                    <h1 class="display-1 text-white mb-md-4 h1">Best Healthcare Solution In Your City</h1>
                 </div>
             </div>
         </div>
     </div>
-	</section>
+	</div>
     <!-- Hero End -->
 	
 
@@ -115,38 +134,38 @@
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded" src="img/own/main_desk.jpeg" style="object-fit: cover;" alt="Heath hub team on desk">
+                        <img class="position-absolute w-100 h-100 rounded" src="img/own/main_desk.jpeg" loading="lazy" style="object-fit: cover;" alt="Heath hub team on desk">
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="mb-4">
-                        <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
-                        <h1 class="display-4">Best Medical Care For Yourself and Your Family</h1>
+                        <p class="d-inline-block text-primary text-uppercase border-bottom border-5 h5">About Us</p>
+                        <p class="display-4 h1">Best Medical Care For Yourself and Your Family</p>
                     </div>
                     <p>Quality is at the heart of everything we do. We adhere to stringent quality control measures and are committed to continuous improvement. Our lab is 						accredited by reputable organizations, reflecting our adherence to the highest standards in the industry.Our team consists of highly trained and experienced 						medical professionals, including pathologists, laboratory technologists, and support staff, all dedicated to delivering quality results. Our collaborative 						approach ensures comprehensive and insightful diagnostic services.</p>
                     <div class="row g-3 pt-3">
                         <div class="col-sm-3 col-6">
                             <div class="bg-light text-center rounded-circle py-4">
                                 <i class="fa fa-3x fa-user-md text-primary mb-3"></i>
-                                <h6 class="mb-0">Qualified<small class="d-block text-primary">Doctors</small></h6>
+                                <p class="mb-0 h6">Qualified<small class="d-block text-primary">Doctors</small></p>
                             </div>
                         </div>
                         <div class="col-sm-3 col-6">
                             <div class="bg-light text-center rounded-circle py-4">
                                 <i class="fa fa-3x fa-procedures text-primary mb-3"></i>
-                                <h6 class="mb-0">Emergency<small class="d-block text-primary">Services</small></h6>
+                                <p class="mb-0 h6">Emergency<small class="d-block text-primary">Services</small></p>
                             </div>
                         </div>
                         <div class="col-sm-3 col-6">
                             <div class="bg-light text-center rounded-circle py-4">
                                 <i class="fa fa-3x fa-microscope text-primary mb-3"></i>
-                                <h6 class="mb-0">Accurate<small class="d-block text-primary">Testing</small></h6>
+                                <p class="mb-0 h6">Accurate<small class="d-block text-primary">Testing</small></p>
                             </div>
                         </div>
                         <div class="col-sm-3 col-6">
                             <div class="bg-light text-center rounded-circle py-4">
                                 <i class="fa fa-3x fa-ambulance text-primary mb-3"></i>
-                                <h6 class="mb-0">Free<small class="d-block text-primary">Ambulance</small></h6>
+                                <p class="mb-0 h6">Free<small class="d-block text-primary">Ambulance</small></p>
                             </div>
                         </div>
                     </div>
@@ -162,8 +181,8 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Services</h5>
-                <h1 class="display-4">Excellent Medical Services</h1>
+                <p class="d-inline-block text-primary text-uppercase border-bottom border-5 h5">Services</p>
+                <p class="display-4 h1">Excellent Medical Services</p>
             </div>
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
@@ -171,7 +190,7 @@
                         <div class="service-icon mb-4">
                             <i class="fa fa-2x fa-user-md text-white"></i>
                         </div>
-                        <h4 class="mb-3">Emergency Care</h4>
+                        <p class="mb-3 h4">Emergency Care</p>
                         <p class="m-0">Swift action, compassionate care, saving lives in critical moments.</p>
                     </div>
                 </div>
@@ -180,7 +199,7 @@
                         <div class="service-icon mb-4">
                             <i class="fa fa-2x fa-procedures text-white"></i>
                         </div>
-                        <h4 class="mb-3">Operation & Surgery</h4>
+                        <p class="mb-3 h4">Operation & Surgery</p>
                         <p class="m-0">Precision, expertise, and care—reshaping lives one surgery at a time.</p>
                     </div>
                 </div>
@@ -189,7 +208,7 @@
                         <div class="service-icon mb-4">
                             <i class="fa fa-2x fa-stethoscope text-white"></i>
                         </div>
-                        <h4 class="mb-3">Outdoor Checkup</h4>
+                        <p class="mb-3 h4">Outdoor Checkup</p>
                         <p class="m-0">Bringing care closer to you, wherever you are.</p>
                     </div>
                 </div>
@@ -198,7 +217,7 @@
                         <div class="service-icon mb-4">
                             <i class="fa fa-2x fa-ambulance text-white"></i>
                         </div>
-                        <h4 class="mb-3">Ambulance Service</h4>
+                        <p class="mb-3 h4">Ambulance Service</p>
                         <p class="m-0">Rapid response, reliable care, every mile of the way.</p>
                     </div>
                 </div>
@@ -207,7 +226,7 @@
                         <div class="service-icon mb-4">
                             <i class="fa fa-2x fa-pills text-white"></i>
                         </div>
-                        <h4 class="mb-3">Medicine & Pharmacy</h4>
+                        <p class="mb-3 h4">Medicine & Pharmacy</p>
                         <p class="m-0">Your health, our priority—trusted medicines, expert care.</p>
                     </div>
                 </div>
@@ -216,7 +235,7 @@
                         <div class="service-icon mb-4">
                             <i class="fa fa-2x fa-microscope text-white"></i>
                         </div>
-                        <h4 class="mb-3">Blood Testing</h4>
+                        <p class="mb-3 h4">Blood Testing</p>
                         <p class="m-0">Accurate results, timely insights—your health in focus.</p>
                     </div>
                 </div>
@@ -233,14 +252,14 @@
             <div class="row gx-5">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <div class="mb-4">
-                        <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Mission</h5>
-                        <h1 class="display-4">Why Choose Health Hub</h1>
+                        <p class="d-inline-block text-white text-uppercase border-bottom border-5 h5">Mission</p>
+                        <p class="display-4 h1">Why Choose Health Hub</p>
                     </div>
                     <p class="text-white mb-5">Our mission is to deliver compassionate, accessible, and quality healthcare to the diverse communities of Northeast India, with a focus on underserved and rural areas. Guided by empathy, innovation, and cultural respect, we aim to bridge the healthcare gap by providing preventive care, advanced treatment, and health education. Together, we strive to empower individuals and families, improve well-being, and build a healthier, more resilient region for generations to come.</p>
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-white text-center rounded p-5">
-                        <img class="position-relative w-100 h-100 rounded" src="img/own/img1.PNG" style="object-fit: cover;" alt="Health Hub team addressing its mission">
+                        <img class="position-relative w-100 h-100 rounded" src="img/own/img1.PNG" loading="lazy" style="object-fit: cover;" alt="Health Hub team addressing its mission">
                     </div>
                 </div>
             </div>
@@ -254,19 +273,19 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Our Doctors</h5>
-                <h1 class="display-4">Qualified Healthcare Professionals</h1>
+                <p class="d-inline-block text-primary text-uppercase border-bottom border-5 h5">Our Doctors</p>
+                <p class="display-4 h1">Qualified Healthcare Professionals</p>
             </div>
             <div class="owl-carousel team-carousel position-relative">
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
                         <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/doctors/drmh.jpeg" style="object-fit: cover;" alt="Image of Dr. Merazul Hazarika">
+                            <img class="img-fluid h-100" src="img/doctors/drmh.jpeg" loading="lazy" style="object-fit: cover;" alt="Image of Dr. Merazul Hazarika">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3> Dr. Merazul Hazarika </h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Obstetrician and Gynaecologist Surgeon</h6>
+                                <p class="h3"> Dr. Merazul Hazarika </p>
+                                <p class="fw-normal fst-italic text-primary mb-4 h6">Obstetrician and Gynaecologist Surgeon</p>
                                 <p class="m-0">10 years experience as Obstetrician and  Gynaecologist Surgeon. Assisted Reproduction and Reproductive Endocrinology. High  Risk  									Obstetric  cases</p>
                             </div>
                         </div>
@@ -275,12 +294,12 @@
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
                         <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/doctors/drnkg.jpeg" style="object-fit: cover;" alt="Image of Dr. Naba Krishna Gohain">
+                            <img class="img-fluid h-100" src="img/doctors/drnkg.jpeg"  loading="lazy" style="object-fit: cover;" alt="Image of Dr. Naba Krishna Gohain">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Dr. Naba Krishna Gohain</h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">MBBS, MS Orthopaedics(Mumbai)-Gold Medalist. </h6>
+                                <p class="h3">Dr. Naba Krishna Gohain</p>
+                                <p class="fw-normal fst-italic text-primary mb-4 h6">MBBS, MS Orthopaedics(Mumbai)-Gold Medalist. </p>
                                 <p class="m-0">An Orthopaedic Surgeon Whose Aim Is To Provide Best Of Patient Care By Dealing In Various Aspects Of Musculoskeletal System Trauma/Diseases/Rheumatological Disorders/Syndromes. Our Services Include Orthopaedic OPD & TeleConsultation, Daycare Operations As Well As Procedures, Orthopaedic Trauma Surgery, Joint Replacement Surgery, Hand & Foot Surgery.
 </p>
                             </div>
@@ -290,12 +309,12 @@
                 <div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
                         <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/doctors/drch.PNG" style="object-fit: cover;" alt="Image of Dr. Chandan Modak">
+                            <img class="img-fluid h-100" src="img/doctors/drch.PNG" loading="lazy" style="object-fit: cover;" alt="Image of Dr. Chandan Modak">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Dr. Chandan Modak </h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
+                                <p class="h3">Dr. Chandan Modak </p>
+                                <p class="fw-normal fst-italic text-primary mb-4 h6">Cardiology Specialist</p>
                                 <p class="m-0"> He have been working as Cardiologist since 2008 after completing my MD medicine from Gauhati Medical College. He is working for Dispur Hospitals Pvt Ltd since completed his DM. They were providing quality care to patients with keeping in mind the economically backward classes of population. They were providing 24X7 Emergency Cardiac Care with all the facilities for advanced cardiac care. </p>
                             </div>
                         </div>
@@ -304,12 +323,12 @@
 				<div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
                         <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/doctors/drnjb.jpeg" style="object-fit: cover;" alt="Image of Dr. Naba J Borah">
+                            <img class="img-fluid h-100" src="img/doctors/drnjb.jpeg" loading="lazy" style="object-fit: cover;" alt="Image of Dr. Naba J Borah">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Dr Naba J Borah </h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">MBBS,MS,(Surgery),MCh(Neurosurgery)</h6>
+                                <p class="h3">Dr Naba J Borah </p>
+                                <p class="fw-normal fst-italic text-primary mb-4 h6">MBBS,MS,(Surgery),MCh(Neurosurgery)</p>
                                 <p class="m-0"> He is one of the leading neurosurgeons of north east India. He is presently associated with GNRC group of Hospitals, Guwahati which is one of the premier institutes in this region providing superspeciality health care. Neurosurgery being a complex and high end medical speciality, requires total commitment with a brilliant edge. Dr Borah,a young visionary with a dynamic personality deals with it with ease and confidence. A passionate and humane neurosurgeon solely dedicated to patients’ care and well being, he always says “Neurosurgery is not the end, it’s just a beginning”. </p>
                             </div>
                         </div>
@@ -318,12 +337,12 @@
 			<div class="team-item">
                     <div class="row g-0 bg-light rounded overflow-hidden">
                         <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="img/doctors/drakb.JPG" style="object-fit: cover;" alt="Image of Dr. Ashok Krishna Bhuyan">
+                            <img class="img-fluid h-100" src="img/doctors/drakb.JPG" loading="lazy" style="object-fit: cover;" alt="Image of Dr. Ashok Krishna Bhuyan">
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Dr Ashok Krishna Bhuyan </h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">MBBS,Endocrinologist</h6>
+                                <p class="h3">Dr Ashok Krishna Bhuyan </p>
+                                <p class="fw-normal fst-italic text-primary mb-4 h6">MBBS,Endocrinologist</p>
                                 <p class="m-0"> He is a practising endocrinologist based at Guwahati . He is currently holding the post of Associate Professor of Endocrinology at Gauhati Medical College and Hospitals . </p>
                             </div>
                         </div>
@@ -340,20 +359,20 @@
 	 <div class="container-fluid py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Gallery</h5>
-                <h1 class="display-4">Explore our collection of images</h1>
+                <p class="d-inline-block text-primary text-uppercase border-bottom border-5 h5">Gallery</p>
+                <p class="display-4 h1">Explore our collection of images</p>
             </div>
     			<div class="gallery-grid">
-      				<img src="img/own/IMG_2669.JPG" alt="Gallery Image 1" class="gallery-item" onclick="openLightbox(0)">
-      				<img src="img/own/IMG_2670.JPG" alt="Gallery Image 2" class="gallery-item" onclick="openLightbox(1)">
-      				<img src="img/own/IMG_2673.JPG" alt="Gallery Image 3" class="gallery-item" onclick="openLightbox(2)">
-      				<img src="img/own/IMG_2674.JPG" alt="Gallery Image 4" class="gallery-item" onclick="openLightbox(3)">
-      				<img src="img/own/IMG_2676.JPG" alt="Gallery Image 5" class="gallery-item" onclick="openLightbox(4)">
-      				<img src="img/own/IMG_2679.JPG" alt="Gallery Image 6" class="gallery-item" onclick="openLightbox(5)">
-					<img src="img/own/IMG_2690.JPG" alt="Gallery Image 7" class="gallery-item" onclick="openLightbox(6)">
-      				<img src="img/own/IMG_2691.JPG" alt="Gallery Image 8" class="gallery-item" onclick="openLightbox(7)">
-      				<img src="img/own/IMG_2692.JPG" alt="Gallery Image 9" class="gallery-item" onclick="openLightbox(8)">
-					<img src="img/own/IMG_2693.JPG" alt="Gallery Image 10" class="gallery-item" onclick="openLightbox(9)">
+      				<img src="img/own/IMG_2669.JPG" loading="lazy" alt="Gallery Image 1" class="gallery-item" onclick="openLightbox(0)">
+      				<img src="img/own/IMG_2670.JPG" loading="lazy" alt="Gallery Image 2" class="gallery-item" onclick="openLightbox(1)">
+      				<img src="img/own/IMG_2673.JPG" loading="lazy" alt="Gallery Image 3" class="gallery-item" onclick="openLightbox(2)">
+      				<img src="img/own/IMG_2674.JPG" loading="lazy" alt="Gallery Image 4" class="gallery-item" onclick="openLightbox(3)">
+      				<img src="img/own/IMG_2676.JPG" loading="lazy" alt="Gallery Image 5" class="gallery-item" onclick="openLightbox(4)">
+      				<img src="img/own/IMG_2679.JPG" loading="lazy" alt="Gallery Image 6" class="gallery-item" onclick="openLightbox(5)">
+					<img src="img/own/IMG_2690.JPG" loading="lazy" alt="Gallery Image 7" class="gallery-item" onclick="openLightbox(6)">
+      				<img src="img/own/IMG_2691.JPG" loading="lazy" alt="Gallery Image 8" class="gallery-item" onclick="openLightbox(7)">
+      				<img src="img/own/IMG_2692.JPG" loading="lazy" alt="Gallery Image 9" class="gallery-item" onclick="openLightbox(8)">
+					<img src="img/own/IMG_2693.JPG" loading="lazy" alt="Gallery Image 10" class="gallery-item" onclick="openLightbox(9)">
     			</div>
 		</div>
   </div>
@@ -375,35 +394,35 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Testimonial</h5>
-                <h1 class="display-4">Patients Say About Our Services</h1>
+                <p class="d-inline-block text-primary text-uppercase border-bottom border-5 h5">Testimonial</p>
+                <p class="display-4 h1">Patients Say About Our Services</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="owl-carousel testimonial-carousel">
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle mx-auto" src="img/woman.png" alt="">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/woman.png" loading="lazy" alt="">
                                 <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
                                     <i class="fa fa-quote-left fa-2x text-primary"></i>
                                 </div>
                             </div>
                             <p class="fs-4 fw-normal">I cannot thank Dr. Merazul Hazarika and the entire team of HealthHub enough for the outstanding care I received. From the moment I walked in, I felt welcomed and cared for. The staff was friendly, professional, and incredibly knowledgeable. Dr. Merazul Hazarika took the time to explain every aspect of my treatment, and I felt confident in their approach. My recovery has been faster than I expected, and I owe it all to the incredible team here. I highly recommend this facility to anyone seeking quality medical care!</p>
                             <hr class="w-25 mx-auto">
-                            <h3>Rashmi Gogoi</h3>
-                            <h6 class="fw-normal text-primary mb-3">Private Job</h6>
+                            <p class="h3">Rashmi Gogoi</p>
+                            <p class="fw-normal text-primary mb-3 h6">Private Job</p>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle mx-auto" src="img/man.png" alt="">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/man.png" loading="lazy" alt="">
                                 <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
                                     <i class="fa fa-quote-left fa-2x text-primary"></i>
                                 </div>
                             </div>
                             <p class="fs-4 fw-normal">I had an excellent experience at HeathHub. From the moment I walked in, I was greeted with warmth and professionalism. Dr. Debanga Sarma took the time to thoroughly explain my diagnosis and treatment options, and I felt confident in the care I was receiving. The staff was incredibly caring and made sure I was comfortable throughout the entire process. I’m so grateful for the outstanding service I received, and I highly recommend this practice to anyone seeking high-quality medical care!</p>
                             <hr class="w-25 mx-auto">
-                            <h3>Ranjan Hazarika</h3>
-                            <h6 class="fw-normal text-primary mb-3">Private Job</h6>
+                            <p class="h3">Ranjan Hazarika</p>
+                            <p class="fw-normal text-primary mb-3 h6">Private Job</p>
                         </div>
                     </div>
                 </div>
@@ -418,14 +437,14 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Get In Touch</h4>
+                    <p class="h4 d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Get In Touch</p>
                     <p class="mb-2"><a href="https://www.google.com/maps/place/HEALTH+HUB/@26.355896,92.698952,15z/data=!4m6!3m5!1s0x374521b85ae96e3b:0xebcae271e0bf11f!8m2!3d26.3558958!4d92.6989523!16s%2Fg%2F11s8ty5mf3?hl=en&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" aria-label="Guwahati Address"><i class="fa fa-map-marker-alt text-primary me-3" ></i></a>Juripar Path,Six Mile Spectrum Residency,Guwahati,Assam 781023</p>
 					  <p class="mb-2"><a href="https://www.google.com/maps/place/HEALTH+HUB/@26.355896,92.698952,15z/data=!4m6!3m5!1s0x374521b85ae96e3b:0xebcae271e0bf11f!8m2!3d26.3558958!4d92.6989523!16s%2Fg%2F11s8ty5mf3?hl=en&entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" aria-label="Nagaon Address"><i class="fa fa-map-marker-alt text-primary me-3"></i></a>Polytechnic road, Panigaon Chariali Road, Near do the gym, Nagaon, Assam 782003</p>
                     <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>rajdeepborah@gmail.com</p>
                     <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+91 84739 63542</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Quick Links</h4>
+                    <p class="h4 d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Quick Links</p>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-light mb-2" href="#home" aria-label="Go to Home"><i class="fa fa-angle-right me-2"></i>Home</a>
                         <a class="text-light mb-2" href="#about" aria-label="Go to About Us"><i class="fa fa-angle-right me-2"></i>About Us</a>
@@ -434,7 +453,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h6 class="text-primary text-uppercase mt-4 mb-3">Follow Us</h6>
+                    <p class="text-primary text-uppercase mt-4 mb-3 h6">Follow Us</p>
                     <div class="d-flex">
                         <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61563856603245" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#" aria-label="Linkedin"><i class="fab fa-linkedin-in"></i></a>
@@ -464,18 +483,18 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-	 <script src="assets/gallery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="lib/easing/easing.min.js" defer></script>
+    <script src="lib/waypoints/waypoints.min.js" defer></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
+    <script src="lib/tempusdominus/js/moment.min.js" defer></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js" defer></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js" defer></script>
+	<script src="assets/gallery.js" defer></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>
