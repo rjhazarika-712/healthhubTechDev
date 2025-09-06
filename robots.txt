@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /about.html
+Disallow: /appointment.html
+Disallow: /blog.html
+Disallow: /contact.html
+Disallow: /detail.html
+Disallow: /feedback.html
+Disallow: /price.html
+Disallow: /search.html
+Disallow: /service.html
+Disallow: /testimonial.html
+Allow: /
+Sitemap: https://carehealthhubs.com/sitemap.xml
